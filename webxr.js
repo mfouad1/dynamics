@@ -189,24 +189,16 @@
       requiredFeatures: ['local-floor'], // TODO: Get this value from Unity
       optionalFeatures: ['hand-tracking', 'hit-test']
     }).then(async (session) => {
-      session.isImmersive = false;
+      session.isImmersive = true;
       session.isInSession = true;
       session.isAR = true;
       this.xrSession = session;
       this.onSessionStarted(session);
-
+       this.canvas.width = this.canvas.parentElement.clientWidth * window.devicePixelRatio;
+    this.canvas.height = this.canvas.parentElement.clientHeight * window.devicePixelRatio;
     });
 
-    // me 
-        if (this.viewerHitTestSource) {
-      this.viewerHitTestSource.cancel();
-      this.viewerHitTestSource = null;
-    }
-    
-    this.gameInstance.Module.WebXR.OnEndXR();
-    this.didNotifyUnity = false;
-    this.canvas.width = this.canvas.parentElement.clientWidth * window.devicePixelRatio;
-    this.canvas.height = this.canvas.parentElement.clientHeight * window.devicePixelRatio;
+
   }
 
   XRManager.prototype.onRequestVRSession = function () {
