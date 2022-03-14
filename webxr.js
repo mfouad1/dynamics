@@ -194,10 +194,7 @@
       session.isAR = true;
       this.xrSession = session;
       this.onSessionStarted(session);
-    
     });
-
-
   }
 
   XRManager.prototype.onRequestVRSession = function () {
