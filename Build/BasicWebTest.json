@@ -1,6 +1,6 @@
 {
-"companyName": "DefaultCompany",
-"productName": "Unity-WebXR-Export",
+"companyName": "Dynamic",
+"productName": "WebAR Presentation",
 "productVersion": "0.1",
 "dataUrl": "BasicWebTest.data.unityweb",
 "wasmCodeUrl": "BasicWebTest.wasm",
