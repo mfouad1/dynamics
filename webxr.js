@@ -194,8 +194,7 @@
       session.isAR = true;
       this.xrSession = session;
       this.onSessionStarted(session);
-       this.canvas.width = this.canvas.parentElement.clientWidth * window.devicePixelRatio;
-    this.canvas.height = this.canvas.parentElement.clientHeight * window.devicePixelRatio;
+    
     });
 
 
